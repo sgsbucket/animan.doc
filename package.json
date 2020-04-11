@@ -1,0 +1,37 @@
+{
+  "name": "animan.doc",
+  "version": "1.0.0",
+  "description": "Source of the Documentation of animan.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgsbucket/animan.doc.git"
+  },
+  "author": "Haskasu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgsbucket/animan.doc.git/issues"
+  },
+  "homepage": "https://github.com/sgsbucket/animan.doc#readme",
+  "devDependencies": {
+    "gulp": "4.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-minify": "^3.0.2",
+    "gulp-open": "^3.0.1",
+    "gulp-prompt": "^1.2.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-replace": "^1.0.0",
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "lodash.template": ">=4.5.0"
+  }
+}
