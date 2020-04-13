@@ -1,9 +1,10 @@
 Introduction
 ===========
-Animan is a powerful tool that helps your studio manage assets and works of animators.
+Animan is a powerful tool that helps studios manage animaton assets and workflow.
 
 Features
 +++++++++++
-#. Nice look
-#. Great rendering
-#. Wonderful Support
+#. Online and Offline Rendering
+#. Work Statistics and Quota System
+#. Team Management
+

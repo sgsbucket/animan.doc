@@ -1,6 +1,6 @@
-Get started
-+++++++++
-Do this and that
+Getting started
++++++++++++++++
+How to get started with animan, the animation management system.
 
 \ :icon:`forward` For administrators :ref:`Go here <roles.administrators>` 
 
