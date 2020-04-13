@@ -104,7 +104,7 @@ function buildAll() {
 
 function buildOne() {
   return new Promise((resolve, reject) => {
-    buildLocales([locale_zh], err => {
+    buildLocales([locale_en], err => {
       if (err) {
         reject(err);
       } else {

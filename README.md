@@ -15,7 +15,7 @@ https://github.com/sgsbucket/animan.doc.git
 * make gettext
 * sphinx-intl update -p build/gettext
 * sphinx-intl build
-* make -e SPHINXOPTS="-D language='zh'" html
+* make -e SPHINXOPTS="-D language='fr'" html
 
 ## Gulp Tasks
 * **gulp build** *build the site*
