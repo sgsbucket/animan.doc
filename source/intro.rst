@@ -1,5 +1,5 @@
 Introduction
-===========
+============
 Animan is a powerful tool that helps studios manage animaton assets and workflow.
 
 Features
