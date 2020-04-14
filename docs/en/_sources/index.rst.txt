@@ -10,6 +10,7 @@ Menu
 
     intro
     get-started
+    glossary
     roles/index
     assets/index
     assets/shows
@@ -25,7 +26,6 @@ Menu
     workflow/privileges
     workflow/rendering
     workflow/quota
-    glossary
 
 
     
