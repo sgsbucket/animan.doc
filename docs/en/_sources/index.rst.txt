@@ -7,9 +7,8 @@ Menu
 
 .. toctree::
     :maxdepth: 2
-
-    intro
     get-started
+    intro
     glossary
     roles/index
     assets/index
