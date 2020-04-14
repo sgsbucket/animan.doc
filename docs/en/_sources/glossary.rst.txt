@@ -1,4 +1,5 @@
-.. glossary::
+.. glossary:: 
+
     Show
       A show is a group of season and episodes.
 

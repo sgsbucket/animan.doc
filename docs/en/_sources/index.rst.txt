@@ -1,9 +1,9 @@
 Welcome to Animan
-=====================
+=================
 Animan is a powerful tool that helps your studio manage animation resources and monitor workflow.
 
 Menu
-+++++++++
+++++
 
 .. toctree::
     :maxdepth: 2
