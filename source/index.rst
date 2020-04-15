@@ -7,6 +7,7 @@ Menu
 
 .. toctree::
     :maxdepth: 2
+    
     get-started
     intro
     glossary
