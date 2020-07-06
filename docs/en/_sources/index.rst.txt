@@ -9,6 +9,5 @@ Menu
     :maxdepth: 2
 
     intro
-    get-started
     roles/index
     renderman/index

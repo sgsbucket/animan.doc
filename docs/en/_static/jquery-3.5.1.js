@@ -1,9 +1,5 @@
 /*!
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
  * jQuery JavaScript Library v3.5.1
-=======
- * jQuery JavaScript Library v3.4.1
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
  * https://jquery.com/
  *
  * Includes Sizzle.js
@@ -13,11 +9,7 @@
  * Released under the MIT license
  * https://jquery.org/license
  *
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
  * Date: 2020-05-04T22:49Z
-=======
- * Date: 2019-05-01T21:04Z
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
  */
 ( function( global, factory ) {
 
@@ -83,7 +75,6 @@ var ObjectFunctionString = fnToString.call( Object );
 var support = {};
 
 var isFunction = function isFunction( obj ) {
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 
       // Support: Chrome <=57, Firefox <=52
       // In some browsers, typeof returns "function" for HTML <object> elements
@@ -99,27 +90,9 @@ var isWindow = function isWindow( obj ) {
 
 
 var document = window.document;
-=======
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
-
-      // Support: Chrome <=57, Firefox <=52
-      // In some browsers, typeof returns "function" for HTML <object> elements
-      // (i.e., `typeof document.createElement( "object" ) === "function"`).
-      // We don't want to classify *any* DOM node as a function.
-      return typeof obj === "function" && typeof obj.nodeType !== "number";
-  };
-
-
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
-=======
-var isWindow = function isWindow( obj ) {
-		return obj != null && obj === obj.window;
-	};
 
 
 
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	var preservedScriptAttributes = {
 		type: true,
 		src: true,
@@ -174,11 +147,7 @@ function toType( obj ) {
 
 
 var
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 	version = "3.5.1",
-=======
-	version = "3.4.1",
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -186,15 +155,7 @@ var
 		// The jQuery object is actually just the init constructor 'enhanced'
 		// Need init if jQuery is called (just allow error to be thrown if not included)
 		return new jQuery.fn.init( selector, context );
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 	};
-=======
-	},
-
-	// Support: Android <=4.0 only
-	// Make sure we trim BOM and NBSP
-	rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 jQuery.fn = jQuery.prototype = {
 
@@ -405,16 +366,10 @@ jQuery.extend( {
 		return true;
 	},
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 	// Evaluates a script in a provided context; falls back to the global one
 	// if not specified.
 	globalEval: function( code, options, doc ) {
 		DOMEval( code, { nonce: options && options.nonce }, doc );
-=======
-	// Evaluates a script in a global context
-	globalEval: function( code, options ) {
-		DOMEval( code, { nonce: options && options.nonce } );
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	},
 
 	each: function( obj, callback ) {
@@ -563,22 +518,14 @@ function isArrayLike( obj ) {
 }
 var Sizzle =
 /*!
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
  * Sizzle CSS Selector Engine v2.3.5
-=======
- * Sizzle CSS Selector Engine v2.3.4
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
  * https://sizzlejs.com/
  *
  * Copyright JS Foundation and other contributors
  * Released under the MIT license
  * https://js.foundation/
  *
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
  * Date: 2020-03-14
-=======
- * Date: 2019-04-08
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
  */
 ( function( window ) {
 var i,
@@ -682,12 +629,8 @@ var i,
 		whitespace + "+$", "g" ),
 
 	rcomma = new RegExp( "^" + whitespace + "*," + whitespace + "*" ),
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 	rcombinators = new RegExp( "^" + whitespace + "*([>+~]|" + whitespace + ")" + whitespace +
 		"*" ),
-=======
-	rcombinators = new RegExp( "^" + whitespace + "*([>+~]|" + whitespace + ")" + whitespace + "*" ),
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	rdescend = new RegExp( whitespace + "|>" ),
 
 	rpseudo = new RegExp( pseudos ),
@@ -886,29 +829,11 @@ function Sizzle( selector, context, results, seed ) {
 			// Take advantage of querySelectorAll
 			if ( support.qsa &&
 				!nonnativeSelectorCache[ selector + " " ] &&
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 				( !rbuggyQSA || !rbuggyQSA.test( selector ) ) &&
 
 				// Support: IE 8 only
 				// Exclude object elements
 				( nodeType !== 1 || context.nodeName.toLowerCase() !== "object" ) ) {
-=======
-				(!rbuggyQSA || !rbuggyQSA.test( selector )) &&
-
-				// Support: IE 8 only
-				// Exclude object elements
-				(nodeType !== 1 || context.nodeName.toLowerCase() !== "object") ) {
-
-				newSelector = selector;
-				newContext = context;
-
-				// qSA considers elements outside a scoping root when evaluating child or
-				// descendant combinators, which is not what we want.
-				// In such cases, we work around the behavior by prefixing every selector in the
-				// list with an ID selector referencing the scope context.
-				// Thanks to Andrew Dupont for this technique.
-				if ( nodeType === 1 && rdescend.test( selector ) ) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 				newSelector = selector;
 				newContext = context;
@@ -1126,11 +1051,7 @@ function createDisabledPseudo( disabled ) {
 					// Where there is no isDisabled, check manually
 					/* jshint -W018 */
 					elem.isDisabled !== !disabled &&
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 					inDisabledFieldset( elem ) === disabled;
-=======
-						inDisabledFieldset( elem ) === disabled;
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 			}
 
 			return elem.disabled === disabled;
@@ -1188,11 +1109,7 @@ support = Sizzle.support = {};
  */
 isXML = Sizzle.isXML = function( elem ) {
 	var namespace = elem.namespaceURI,
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 		docElem = ( elem.ownerDocument || elem ).documentElement;
-=======
-		docElem = (elem.ownerDocument || elem).documentElement;
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 	// Support: IE <=8
 	// Assume HTML when documentElement doesn't yet exist, such as inside loading iframes
@@ -1686,14 +1603,7 @@ Sizzle.matches = function( expr, elements ) {
 };
 
 Sizzle.matchesSelector = function( elem, expr ) {
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 	setDocument( elem );
-=======
-	// Set document vars if needed
-	if ( ( elem.ownerDocument || elem ) !== document ) {
-		setDocument( elem );
-	}
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 	if ( support.matchesSelector && documentIsHTML &&
 		!nonnativeSelectorCache[ expr + " " ] &&
@@ -1711,11 +1621,7 @@ Sizzle.matchesSelector = function( elem, expr ) {
 				elem.document && elem.document.nodeType !== 11 ) {
 				return ret;
 			}
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 		} catch ( e ) {
-=======
-		} catch (e) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 			nonnativeSelectorCache( expr, true );
 		}
 	}
@@ -2367,11 +2273,7 @@ Expr = Sizzle.selectors = {
 			return matchIndexes;
 		} ),
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 		"lt": createPositionalPseudo( function( matchIndexes, length, argument ) {
-=======
-		"lt": createPositionalPseudo(function( matchIndexes, length, argument ) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 			var i = argument < 0 ?
 				argument + length :
 				argument > length ?
@@ -3466,7 +3368,6 @@ jQuery.each( {
 		return siblings( elem.firstChild );
 	},
 	contents: function( elem ) {
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 		if ( elem.contentDocument != null &&
 
 			// Support: IE 11+
@@ -3484,19 +3385,6 @@ jQuery.each( {
 			elem = elem.content || elem;
 		}
 
-=======
-		if ( typeof elem.contentDocument !== "undefined" ) {
-			return elem.contentDocument;
-		}
-
-		// Support: IE 9 - 11 only, iOS 7 only, Android Browser <=4.3 only
-		// Treat the template element as a regular one in browsers that
-		// don't support it.
-		if ( nodeName( elem, "template" ) ) {
-			elem = elem.content || elem;
-		}
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 		return jQuery.merge( [], elem.childNodes );
 	}
 }, function( name, fn ) {
@@ -4317,11 +4205,7 @@ var rmsPrefix = /^-ms-/,
 	rdashAlpha = /-([a-z])/g;
 
 // Used by camelCase as callback to replace()
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 function fcamelCase( _all, letter ) {
-=======
-function fcamelCase( all, letter ) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	return letter.toUpperCase();
 }
 
@@ -5205,35 +5089,6 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 }
 
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
-=======
-( function() {
-	var fragment = document.createDocumentFragment(),
-		div = fragment.appendChild( document.createElement( "div" ) ),
-		input = document.createElement( "input" );
-
-	// Support: Android 4.0 - 4.3 only
-	// Check state lost if the name is set (#11217)
-	// Support: Windows Web Apps (WWA)
-	// `name` and `type` must use .setAttribute for WWA (#14901)
-	input.setAttribute( "type", "radio" );
-	input.setAttribute( "checked", "checked" );
-	input.setAttribute( "name", "t" );
-
-	div.appendChild( input );
-
-	// Support: Android <=4.1 only
-	// Older WebKit doesn't clone checked state correctly in fragments
-	support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
-
-	// Support: IE <=11 only
-	// Make sure textarea (and checkbox) defaultValue is properly cloned
-	div.innerHTML = "<textarea>x</textarea>";
-	support.noCloneChecked = !!div.cloneNode( true ).lastChild.defaultValue;
-} )();
-
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 var
 	rkeyEvent = /^key/,
 	rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
@@ -5837,93 +5692,6 @@ function leverageNative( el, type, expectSync ) {
 	} );
 }
 
-// Ensure the presence of an event listener that handles manually-triggered
-// synthetic events by interrupting progress until reinvoked in response to
-// *native* events that it fires directly, ensuring that state changes have
-// already occurred before other listeners are invoked.
-function leverageNative( el, type, expectSync ) {
-
-	// Missing expectSync indicates a trigger call, which must force setup through jQuery.event.add
-	if ( !expectSync ) {
-		if ( dataPriv.get( el, type ) === undefined ) {
-			jQuery.event.add( el, type, returnTrue );
-		}
-		return;
-	}
-
-	// Register the controller as a special universal handler for all event namespaces
-	dataPriv.set( el, type, false );
-	jQuery.event.add( el, type, {
-		namespace: false,
-		handler: function( event ) {
-			var notAsync, result,
-				saved = dataPriv.get( this, type );
-
-			if ( ( event.isTrigger & 1 ) && this[ type ] ) {
-
-				// Interrupt processing of the outer synthetic .trigger()ed event
-				// Saved data should be false in such cases, but might be a leftover capture object
-				// from an async native handler (gh-4350)
-				if ( !saved.length ) {
-
-					// Store arguments for use when handling the inner native event
-					// There will always be at least one argument (an event object), so this array
-					// will not be confused with a leftover capture object.
-					saved = slice.call( arguments );
-					dataPriv.set( this, type, saved );
-
-					// Trigger the native event and capture its result
-					// Support: IE <=9 - 11+
-					// focus() and blur() are asynchronous
-					notAsync = expectSync( this, type );
-					this[ type ]();
-					result = dataPriv.get( this, type );
-					if ( saved !== result || notAsync ) {
-						dataPriv.set( this, type, false );
-					} else {
-						result = {};
-					}
-					if ( saved !== result ) {
-
-						// Cancel the outer synthetic event
-						event.stopImmediatePropagation();
-						event.preventDefault();
-						return result.value;
-					}
-
-				// If this is an inner synthetic event for an event with a bubbling surrogate
-				// (focus or blur), assume that the surrogate already propagated from triggering the
-				// native event and prevent that from happening again here.
-				// This technically gets the ordering wrong w.r.t. to `.trigger()` (in which the
-				// bubbling surrogate propagates *after* the non-bubbling base), but that seems
-				// less bad than duplication.
-				} else if ( ( jQuery.event.special[ type ] || {} ).delegateType ) {
-					event.stopPropagation();
-				}
-
-			// If this is a native event triggered above, everything is now in order
-			// Fire an inner synthetic event with the original arguments
-			} else if ( saved.length ) {
-
-				// ...and capture the result
-				dataPriv.set( this, type, {
-					value: jQuery.event.trigger(
-
-						// Support: IE <=9 - 11+
-						// Extend with the prototype to reset the above stopImmediatePropagation()
-						jQuery.extend( saved[ 0 ], jQuery.Event.prototype ),
-						saved.slice( 1 ),
-						this
-					)
-				} );
-
-				// Abort handling of the native event
-				event.stopImmediatePropagation();
-			}
-		}
-	} );
-}
-
 jQuery.removeEvent = function( elem, type, handle ) {
 
 	// This "if" is needed for plain objects
@@ -6195,16 +5963,6 @@ jQuery.fn.extend( {
 
 var
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
-=======
-	/* eslint-disable max-len */
-
-	// See https://github.com/eslint/eslint/issues/3229
-	rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,
-
-	/* eslint-enable */
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	// Support: IE <=10 - 11, Edge 12 - 13 only
 	// In IE/Edge using regex groups here causes severe slowdowns.
 	// See https://connect.microsoft.com/IE/feedback/details/1736512/
@@ -6364,11 +6122,7 @@ function domManip( collection, args, callback, ignored ) {
 							if ( jQuery._evalUrl && !node.noModule ) {
 								jQuery._evalUrl( node.src, {
 									nonce: node.nonce || node.getAttribute( "nonce" )
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 								}, doc );
-=======
-								} );
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 							}
 						} else {
 							DOMEval( node.textContent.replace( rcleanScript, "" ), node, doc );
@@ -6667,7 +6421,6 @@ var getStyles = function( elem ) {
 		return view.getComputedStyle( elem );
 	};
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 var swap = function( elem, options, callback ) {
 	var ret, name,
 		old = {};
@@ -6689,8 +6442,6 @@ var swap = function( elem, options, callback ) {
 };
 
 
-=======
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 
 
@@ -6748,11 +6499,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 	}
 
 	var pixelPositionVal, boxSizingReliableVal, scrollboxSizeVal, pixelBoxStylesVal,
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 		reliableTrDimensionsVal, reliableMarginLeftVal,
-=======
-		reliableMarginLeftVal,
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 		container = document.createElement( "div" ),
 		div = document.createElement( "div" );
 
@@ -6773,19 +6520,11 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 			return boxSizingReliableVal;
 		},
 		pixelBoxStyles: function() {
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 			computeStyleTests();
 			return pixelBoxStylesVal;
 		},
 		pixelPosition: function() {
 			computeStyleTests();
-=======
-			computeStyleTests();
-			return pixelBoxStylesVal;
-		},
-		pixelPosition: function() {
-			computeStyleTests();
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 			return pixelPositionVal;
 		},
 		reliableMarginLeft: function() {
@@ -6795,7 +6534,6 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 		scrollboxSize: function() {
 			computeStyleTests();
 			return scrollboxSizeVal;
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 		},
 
 		// Support: IE 9 - 11+, Edge 15 - 18+
@@ -6825,8 +6563,6 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 				documentElement.removeChild( table );
 			}
 			return reliableTrDimensionsVal;
-=======
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 		}
 	} );
 } )();
@@ -6951,11 +6687,7 @@ var
 		fontWeight: "400"
 	};
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 function setPositiveNumber( _elem, value, subtract ) {
-=======
-function setPositiveNumber( elem, value, subtract ) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 	// Any relative (+/-) values have already been
 	// normalized at this point
@@ -6989,19 +6721,11 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 
 			// Add padding
 			delta += jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 
 			// For "border" or "margin", add border
 			if ( box !== "padding" ) {
 				delta += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 
-=======
-
-			// For "border" or "margin", add border
-			if ( box !== "padding" ) {
-				delta += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 			// But still keep track of it otherwise
 			} else {
 				extra += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
@@ -7054,17 +6778,10 @@ function getWidthOrHeight( elem, dimension, extra ) {
 		isBorderBox = boxSizingNeeded &&
 			jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
 		valueIsBorderBox = isBorderBox,
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 
 		val = curCSS( elem, dimension, styles ),
 		offsetProp = "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 );
 
-=======
-
-		val = curCSS( elem, dimension, styles ),
-		offsetProp = "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 );
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	// Support: Firefox <=54
 	// Return a confounding non-pixel value or feign ignorance, as appropriate.
 	if ( rnumnonpx.test( val ) ) {
@@ -7075,7 +6792,6 @@ function getWidthOrHeight( elem, dimension, extra ) {
 	}
 
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 	// Support: IE 9 - 11 only
 	// Use offsetWidth/offsetHeight for when box sizing is unreliable.
 	// In those cases, the computed value can be trusted to be border-box.
@@ -7096,19 +6812,6 @@ function getWidthOrHeight( elem, dimension, extra ) {
 		!parseFloat( val ) && jQuery.css( elem, "display", false, styles ) === "inline" ) &&
 
 		// Make sure the element is visible & connected
-=======
-	// Fall back to offsetWidth/offsetHeight when value is "auto"
-	// This happens for inline elements with no explicit setting (gh-3571)
-	// Support: Android <=4.1 - 4.3 only
-	// Also use offsetWidth/offsetHeight for misreported inline dimensions (gh-3602)
-	// Support: IE 9-11 only
-	// Also use offsetWidth/offsetHeight for when box sizing is unreliable
-	// We use getClientRects() to check for hidden/disconnected.
-	// In those cases, the computed value can be trusted to be border-box
-	if ( ( !support.boxSizingReliable() && isBorderBox ||
-		val === "auto" ||
-		!parseFloat( val ) && jQuery.css( elem, "display", false, styles ) === "inline" ) &&
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 		elem.getClientRects().length ) {
 
 		isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
@@ -7303,11 +7006,7 @@ jQuery.extend( {
 	}
 } );
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 jQuery.each( [ "height", "width" ], function( _i, dimension ) {
-=======
-jQuery.each( [ "height", "width" ], function( i, dimension ) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	jQuery.cssHooks[ dimension ] = {
 		get: function( elem, computed, extra ) {
 			if ( computed ) {
@@ -9149,11 +8848,7 @@ if ( !support.focusin ) {
 }
 var location = window.location;
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 var nonce = { guid: Date.now() };
-=======
-var nonce = Date.now();
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 var rquery = ( /\?/ );
 
@@ -10158,11 +9853,7 @@ jQuery.ajaxPrefilter( function( s ) {
 } );
 
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 jQuery._evalUrl = function( url, options, doc ) {
-=======
-jQuery._evalUrl = function( url, options ) {
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 	return jQuery.ajax( {
 		url: url,
 
@@ -10180,11 +9871,7 @@ jQuery._evalUrl = function( url, options ) {
 			"text script": function() {}
 		},
 		dataFilter: function( response ) {
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 			jQuery.globalEval( response, options, doc );
-=======
-			jQuery.globalEval( response, options );
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 		}
 	} );
 };
@@ -10998,7 +10685,6 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 } );
 
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 jQuery.each( [
 	"ajaxStart",
 	"ajaxStop",
@@ -11012,27 +10698,6 @@ jQuery.each( [
 	};
 } );
 
-=======
-jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
-	"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
-	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
-	function( i, name ) {
-
-	// Handle event binding
-	jQuery.fn[ name ] = function( data, fn ) {
-		return arguments.length > 0 ?
-			this.on( name, null, data, fn ) :
-			this.trigger( name );
-	};
-} );
-
-jQuery.fn.extend( {
-	hover: function( fnOver, fnOut ) {
-		return this.mouseenter( fnOver ).mouseleave( fnOut || fnOver );
-	}
-} );
-
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 
 
@@ -11061,7 +10726,6 @@ jQuery.fn.extend( {
 	}
 } );
 
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
 jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
 	"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
 	"change select submit keydown keypress keyup contextmenu" ).split( " " ),
@@ -11082,8 +10746,6 @@ jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
 // Make sure we trim BOM and NBSP
 var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
 
-=======
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 // Bind a function to a context, optionally partially applying any
 // arguments.
 // jQuery.proxy is deprecated to promote standards (specifically Function#bind)
@@ -11133,21 +10795,6 @@ jQuery.type = toType;
 jQuery.now = Date.now;
 
 jQuery.isNumeric = function( obj ) {
-<<<<<<< HEAD:docs/en/_static/jquery-3.5.1.js
-=======
-
-	// As of jQuery 3.0, isNumeric is limited to
-	// strings and numbers (primitives or objects)
-	// that can be coerced to finite numbers (gh-2662)
-	var type = jQuery.type( obj );
-	return ( type === "number" || type === "string" ) &&
-
-		// parseFloat NaNs numeric-cast false positives ("")
-		// ...but misinterprets leading-number strings, particularly hex literals ("0x...")
-		// subtraction forces infinities to NaN
-		!isNaN( obj - parseFloat( obj ) );
-};
->>>>>>> aa0a93b3596b0e65dd587cc6d4c1f1de5f6e7408:docs/en/_static/jquery-3.4.1.js
 
 	// As of jQuery 3.0, isNumeric is limited to
 	// strings and numbers (primitives or objects)

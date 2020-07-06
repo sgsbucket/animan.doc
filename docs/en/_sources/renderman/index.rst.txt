@@ -1,4 +1,4 @@
-Get started
+Renderman
 ==============================
 
 Renderman is an app that runs on a pc in your studio.
