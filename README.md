@@ -18,6 +18,6 @@ https://github.com/sgsbucket/animan.doc.git
 * make -e SPHINXOPTS="-D language='fr'" html
 
 ## Gulp Tasks
-* **gulp build** *build the site*
 * **gulp intl** *build translations*
+* **gulp build** *build the site*
 * **gulp open** *open local homepage of the build*

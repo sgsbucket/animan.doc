@@ -1,9 +1,12 @@
-Tools categorized by user role
+Get started
 ==============================
+
+Choose a role to start.
 
 .. toctree::
     :maxdepth: 1
-    :glob:
 
-    */index
+    members/index
+    supervisors/index
+    administrators/index
 

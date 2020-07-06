@@ -11,3 +11,4 @@ Menu
     intro
     get-started
     roles/index
+    renderman/index

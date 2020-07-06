@@ -1,9 +1,12 @@
-.. _roles.administrators:
+.. _roles.admin:
 
 Admins
 ===================
 
-You can add members, create shows, and more...
+.. toctree::
+    :maxdepth: 2
 
-Add members
-+++++++++++
+    addMember
+    inviteMember
+    memberPrivileges
+    addNewShow
