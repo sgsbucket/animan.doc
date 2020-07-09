@@ -1,6 +1,6 @@
 .. _renderman.installation:
 
-Renderman Installation
+Installation
 =========================
 
 1. Copy the renderman installer to a folder.
