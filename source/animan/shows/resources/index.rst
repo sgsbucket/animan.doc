@@ -14,4 +14,5 @@ A Resource Category tells what file format are used and what stages the resource
 
     resourceCategory/index
     createResource
+    updateResourceFile
 
