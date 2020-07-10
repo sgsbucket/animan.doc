@@ -1,7 +1,9 @@
 # animan.doc
 Source of the Documentation of animan.doc
 
-https://github.com/sgsbucket/animan.doc.git
+Doc site: https://sgsbucket.github.io/animan.doc
+
+Repo: https://github.com/sgsbucket/animan.doc.git
 
 ## Install
 * install python3
