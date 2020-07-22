@@ -3,7 +3,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -27,7 +26,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Installation" href="installation.html" />
-    <link rel="prev" title="Renderman" href="../animan/shows/resources/index.html" /> 
+    <link rel="prev" title="Create Resource" href="../animan/shows/resources/createResource.html" /> 
   </head>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
@@ -100,15 +99,21 @@
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../animan/index.html">Animan</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../animan/members/index.html">Members</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../animan/members/index.html">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../animan/members/addMember.html">Add Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animan/members/inviteMember.html">Invite Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animan/members/memberPrivileges.html">Member Role and Privileges</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../animan/shows/index.html">Shows</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../animan/shows/addNewShow.html">Add New Show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animan/shows/rendering.html">Rendering</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../animan/shows/episodes/index.html">Episodes</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../animan/shows/resources/index.html">Renderman</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../animan/shows/resources/index.html">Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../animan/shows/resources/resourceCategory/index.html">Resource Category</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../animan/shows/resources/createResource.html">Create Resource</a></li>
 </ul>
 </li>
 </ul>
@@ -151,15 +156,21 @@
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../animan/index.html">Animan</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../animan/members/index.html">Members</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../animan/members/index.html">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../animan/members/addMember.html">Add Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animan/members/inviteMember.html">Invite Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animan/members/memberPrivileges.html">Member Role and Privileges</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../animan/shows/index.html">Shows</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../animan/shows/addNewShow.html">Add New Show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../animan/shows/rendering.html">Rendering</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../animan/shows/episodes/index.html">Episodes</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../animan/shows/resources/index.html">Renderman</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../animan/shows/resources/index.html">Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../animan/shows/resources/resourceCategory/index.html">Resource Category</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../animan/shows/resources/createResource.html">Create Resource</a></li>
 </ul>
 </li>
 </ul>
@@ -186,8 +197,9 @@
         
   <div class="section" id="renderman">
 <span id="id1"></span><h1>Renderman<a class="headerlink" href="#renderman" title="Permalink to this headline">¶</a></h1>
-<p>Renderman is an app that runs on a pc in your studio to render production movies that is managed on animan.
-It also helps the studio render previews/thumnails of the resources/shots that are hosted on animan server.</p>
+<p>Renderman is a companion app to animan.  It runs on a local ‘render’ pc you and produces production video as instructed by animan.
+It also render previews/thumnails of the resources/shots that are hosted on animan server.</p>
+<p>[add diagram of animan &gt; renderman &gt; amazon &gt; webserver]</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
@@ -207,11 +219,11 @@ It also helps the studio render previews/thumnails of the resources/shots that a
 
       <div class="clearer"></div>
     </div><div class="pagenation">
-     <a id="button-prev" href="../animan/shows/resources/index.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
+     <a id="button-prev" href="../animan/shows/resources/createResource.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
          <i class="pagenation-arrow-L material-icons">arrow_back</i>
          <div class="pagenation-text">
             <span class="pagenation-direction">Previous</span>
-            <div>Renderman</div>
+            <div>Create Resource</div>
          </div>
      </a>
      <a id="button-next" href="installation.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="N">
@@ -238,7 +250,7 @@ It also helps the studio render previews/thumnails of the resources/shots that a
 
     <div class="mdl-mini-footer__right-section">
         <div>&copy; Copyright 2020, Smiley Guy Studios.</div>
-      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.1.1 using <a href="https://github.com/myyasuda/sphinx_materialdesign_theme">sphinx_materialdesign_theme</a>.</div>
+      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 3.0.1 using <a href="https://github.com/myyasuda/sphinx_materialdesign_theme">sphinx_materialdesign_theme</a>.</div>
     </div>
 </footer>
         </main>

@@ -1,6 +1,6 @@
 Welcome to Animan
 =====================
-Animan is a powerful tool that helps your studio manage assets and works of animators.
+Animan is a web app that helps studios manage the production of broadcast animation.  It is hosted in the cloud and uses Amazon services for storage.
 
 Menu
 +++++++++

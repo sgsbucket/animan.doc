@@ -1,11 +1,11 @@
 Shows
 ==============================
 
-A show represents a series of episodes and many resources that are used to produce the episodes.
+A show represents a series of episodes, broken into seasons, and the many resources that are used to produce the episodes.
 
-Every resourec in animan belongs to ONE show and may be used for multiple episodes. Resoures can be referenced each other.
+Every resource in animan belongs to ONE show and may be used for multiple seasons and episodes. Resoures reference each other.
 
-The hierachy of the resource management structure is described below:
+The hierachy of the resource structure is described below:
 
 ::
 
@@ -13,11 +13,12 @@ The hierachy of the resource management structure is described below:
     ├── resource categories
     │   └── resources(&shots)
     │       └── files
-    └── episodes
-        └── shots
-            ├── fla/xstage
-            ├── audio
-            └── animatic
+    └── seasons
+    │   └── episodes
+    │       └── shots
+    │           ├── fla/xstage
+    │           ├── audio
+    │           └── animatic
 
 
 .. toctree::
@@ -27,5 +28,3 @@ The hierachy of the resource management structure is described below:
     rendering
     episodes/index
     resources/index
-
-

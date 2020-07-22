@@ -2,11 +2,12 @@
 
 Installation
 =========================
+Your customer support team member will provide you with the latest installer for renderman.
 
 1. Copy the renderman installer to a folder.
  
  Everything that renderman produces will be stored in this folder,
- so be sure to choose a folder that can hold a couple T of files.
+ so be sure to choose a folder that can hold 2 TB of files.
 
 2. Run the installer.
 

@@ -3,8 +3,10 @@
 Renderman
 ==============================
 
-Renderman is an app that runs on a pc in your studio to render production movies that is managed on animan. 
-It also helps the studio render previews/thumnails of the resources/shots that are hosted on animan server.
+Renderman is a companion app to animan.  It runs on a local 'render' pc controlled by your studio.   It produces production video as instructed by animan. 
+It also renders preview images and thumnails of the resources and shots that are hosted on the animan server.
+
+[add diagram of animan > renderman > amazon > webserver]
 
 .. toctree::
     :maxdepth: 1

@@ -1,7 +1,9 @@
 Animan
 ==============================
 
-Animan is a web app that helps the studio manage members, shows, and work managements.
+Animan is a web app that helps studios manage the production of broadcast animation.
+
+[add diagram of animan > renderman > amazon > webserver]
 
 .. toctree::
     :maxdepth: 1
