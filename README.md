@@ -1,4 +1,5 @@
 # animan.doc
+(Deprecated, go https://github.com/sgsbucket/animan-doc )
 Source of the Documentation of animan.doc
 
 Doc site: https://sgsbucket.github.io/animan.doc
